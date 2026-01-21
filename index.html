@@ -1,39 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vote MG for Secretary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote MG for Booster Club Secretary</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Fredoka', sans-serif; background-color: #fafafa; text-align: center; padding: 20px; }
-        header { background-color: #4b0082; color: #ffd700; padding: 40px; border-radius: 20px; border-bottom: 8px solid #ffd700; }
-        .content { background: white; padding: 30px; border-radius: 20px; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        ul { text-align: left; display: inline-block; list-style-type: '👑'; }
-        li { margin-bottom: 10px; padding-left: 10px; }
-        h2 { color: #4b0082; }
-        .vote-section { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
-        input[type="checkbox"] { display: none; }
-        .vote-label { background-color: #ffd700; color: #4b0082; padding: 15px 30px; border-radius: 10px; font-weight: bold; cursor: pointer; border: 3px solid #4b0082; display: inline-block; }
-        input[type="checkbox"]:checked + .vote-label { background-color: #4b0082; color: #ffd700; }
+        body {
+            font-family: 'Fredoka', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #fafafa; 
+        }
+        header {
+            background-color: #4b0082; /* Deep Purple */
+            color: #ffd700; /* Gold */
+            padding: 3rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            border-bottom: 8px solid #ffd700; 
+            box-shadow: 0 4px 15px rgba(75, 0, 130, 0.3);
+        }
+        h1 { margin: 0; font-size: 2.2rem; text-shadow: 2px 2px 0px rgba(0,0,0,0.2); }
+        
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 2px solid #eee;
+        }
+
+        ul {
+            text-align: left;
+            display: inline-block;
+            list-style-type: '👑';
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            color: #4b0082; 
+            font-size: 2rem;
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+
+        .vote-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        /* Style the links to look like big gold buttons */
+        .btn-link {
+            text-decoration: none;
+            background-color: #ffd700; /* Gold */
+            color: #4b0082; /* Purple Text */
+            padding: 20px 40px;
+            border-radius: 15px;
+            font-size: 24px;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 4px solid #4b0082;
+            min-width: 120px;
+        }
+
+        .btn-link:hover {
+            background-color: #4b0082;
+            color: #ffd700;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Specific style for the "Not MG" button if you want it to look different */
+        .not-mg {
+            background-color: #eee;
+            color: #777;
+            border-color: #777;
+        }
+        
+        .not-mg:hover {
+            background-color: #333;
+            color: #fff;
+            border-color: #000;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Why Should You vote MG for Secretary?</h1>
     </header>
+
     <div class="content">
-        <p>The Booster Club needs a Secretary who knows their way around a spreadsheet and a snack bar.</p>
+        <p style="font-size: 1.2rem; font-weight: 600;">The Booster Club needs a Secretary who can juggle event logistics, keep leadership in the loop, and take minutes without breaking a sweat.</p>
+        
         <ul>
-            <li><strong>The Minute Master:</strong> Notes so clear you'll think you were at the meeting (even if you weren't).</li>
-            <li><strong>Email Ninja:</strong> MG replies faster than a referee blows a whistle.</li>
-            <li><strong>Meeting Mercenary:</strong> Keeping meetings short so we can all go home.</li>
+            <li><strong>The Event Architect:</strong> MG doesn't just attend events; MG helps build them from the ground up so everything actually runs smoothly.</li>
+            <li><strong>Chief Information Officer:</strong> MG keeps personnel and leadership so well-informed, you’ll start thinking MG has a crystal ball.</li>
+            <li><strong>Minute-by-Minute:</strong> MG’s meeting minutes are so clear you’ll feel like you were there, even if you stayed home.</li>
+            <li><strong>No-Nonsense Logic:</strong> MG ensures the meeting stays on track and ends on time.</li>
         </ul>
-        <hr>
+
+        <hr style="border: 0; height: 2px; background: #eee; margin: 40px 0;">
+
         <h2>Secretary</h2>
+        
         <div class="vote-section">
-            <input type="checkbox" id="v1"><label for="v1" class="vote-label">MG</label>
-            <input type="checkbox" id="v2"><label for="v2" class="vote-label">MG</label>
+            <a href="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExczFweXdtNnl0a3o5YTl6cHJ1ZThkc3Jjc2plejFjbGpuMDgzY3FwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohzAu2U1tOafteBa0/giphy.gif" class="btn-link">MG</a>
+
+            <a href="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjljZnZtbGd4dXAwandoZ3o5bW1lemhwYXp5eG14bmk3YWZnaTY5NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JQmAC35OvhFygbRPWk/giphy.gif" class="btn-link not-mg">NOT MG</a>
         </div>
+        
+        <p style="margin-top: 20px; color: #7f8c8d; font-style: italic;">
+            Choose wisely!
+        </p>
     </div>
+
 </body>
 </html>
